@@ -43,10 +43,14 @@ export class ActualVisitaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.listaInmuebles);
+
+    this.showInfo();
   }
 
 
+  showInfo(): void {
+    console.log(this.listaInmuebles);
+  }
 
 
 
