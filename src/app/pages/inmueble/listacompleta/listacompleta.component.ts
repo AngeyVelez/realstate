@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './listacompleta.component.html',
   styleUrls: ['./listacompleta.component.scss']
 })
-export class ListacompletaComponent implements OnInit {
+export class ListacompletaComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  /*ngOnInit(): void {
+  }*/
 
 }
