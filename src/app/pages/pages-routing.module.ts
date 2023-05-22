@@ -79,6 +79,11 @@ const routes: Routes = [{
         .then(m => m.UserModule)
     },
     {
+      path: 'visitas',
+      loadChildren: () => import('./visitas/visitas.module')
+        .then(m => m.VisitasModule)
+    },
+    {
       path: '**',
       component: NotFoundComponent,
     },

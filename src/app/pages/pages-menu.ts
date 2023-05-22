@@ -27,6 +27,17 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ]
   },
   {
+    title: 'visitas',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'actualizar-visitas',
+        icon: 'message-circle-outline',
+        link: '/pages/visitas/actual-visita'
+      }
+    ]
+  },
+  {
     title: 'Layout',
     icon: 'layout-outline',
     children: [
