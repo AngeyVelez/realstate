@@ -7,6 +7,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
+import { UpdateListVisitsComponent } from './update-list-visits/update-list-visits.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
   ],
   declarations: [
     PagesComponent,
+    UpdateListVisitsComponent,
   ],
 })
 export class PagesModule {
