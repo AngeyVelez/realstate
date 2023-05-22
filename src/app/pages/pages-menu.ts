@@ -17,6 +17,17 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
+    title: 'Listar Inmueble',
+    icon: 'home-outline',
+    children:[
+      {
+        title: 'Mostrar Lista Inmuebles',
+        icon: 'home-outline',
+        link: '/pages/inmueble/list'
+      }
+    ]
+  },
+  {
     title: 'Layout',
     icon: 'layout-outline',
     children: [
