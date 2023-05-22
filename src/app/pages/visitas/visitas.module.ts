@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { VisitasRoutingModule } from './visitas-routing.module';
 import { ActualVisitaComponent } from './actual-visita/actual-visita.component';
+import { NbCardModule, NbTreeGridModule } from '@nebular/theme';
 
 @NgModule({
     declarations: [
@@ -10,7 +11,9 @@ import { ActualVisitaComponent } from './actual-visita/actual-visita.component';
     ],
     imports: [
         CommonModule,
-        VisitasRoutingModule
+        VisitasRoutingModule,
+        NbCardModule,
+        NbTreeGridModule,
     ]
 })
 export class VisitasModule { }

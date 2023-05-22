@@ -1,1 +1,57 @@
-<p>actual-visita works!</p>
+<nb-card>
+
+    <nb-card-header class="cls-nb-card-header">Visitas realizadas</nb-card-header>
+
+    <nb-card-body>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Fecha solicitud visita</th>
+                    <th scope="col">Fecha visita</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Referencia inmueble</th>
+                    <th scope="col">Comentarios</th>
+                    <th scope="col">Agregar comentario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listaInmuebles">
+                    <td>{{item.fechaSolicitud}}</td>
+                    <td>{{item.fechaVisita}}</td>
+                    <td>{{item.Hora}}</td>
+                    <td>{{item.Referencia}}</td>
+                    <td>{{item.comentario}}</td>
+                    <td>
+                        <div class="buttons-row">
+                            <button class="cls-c-p">
+                                Agregar comentario
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Id</th>
+                <th scope="col">Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of list">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.nombre}}</td>
+                <td>{{item.apellido}}</td>
+                <td>{{item.telefono}}</td>
+              </tr>
+            </tbody>
+          </table> -->
+
+    </nb-card-body>
+
+</nb-card>
