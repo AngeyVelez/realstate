@@ -1,8 +1,28 @@
 <nb-card>
 
-    <nb-card-header class="cls-nb-card-header">Visitas realizadas</nb-card-header>
+    <nb-card-header class="cls-nb-card-header">Visitas realizadas
+
+    </nb-card-header>
 
     <nb-card-body>
+
+        <div class="buttons-row">
+            <div class="cls-header-buttons">
+                <nb-card>
+                    <nb-card-header>
+                        <div class="buttons-row cls-buttons">
+                            <button nbButton>Inicio</button>
+                            <button nbButton>sucursal</button>
+                            <button nbButton>Visita</button>
+                            <button nbButton>Cliente</button>
+                            <button nbButton>Propietario</button>
+                            <button nbButton (click)="open()">Comentarios</button>
+                        </div>
+                    </nb-card-header>
+                </nb-card>
+            </div>
+        </div>
+
 
         <table class="table">
             <thead>
@@ -12,7 +32,6 @@
                     <th scope="col">Hora</th>
                     <th scope="col">Referencia inmueble</th>
                     <th scope="col">Comentarios</th>
-                    <th scope="col">Agregar comentario</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,17 +41,15 @@
                     <td>{{item.Hora}}</td>
                     <td>{{item.Referencia}}</td>
                     <td>{{item.comentario}}</td>
-                    <td>
-                        <div class="col-md-12 col-lg-6 col-xxxl-3">
-                            <button nbButton (click)="open()">
-                                Agregar comentario
-                            </button>
-                        </div>
-                    </td>
                 </tr>
             </tbody>
         </table>
 
     </nb-card-body>
+
+    <nb-card-footer>
+        <a>footer</a>
+    </nb-card-footer>
+
 
 </nb-card>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { log } from 'console';
 import { ShowcaseDialogComponent } from '../../modal-overlays/dialog/showcase-dialog/showcase-dialog.component';
 import { NbDialogService } from '@nebular/theme';
+import { DialogCommentComponent } from './dialog-comment/dialog-comment.component';
 
 
 @Component({
@@ -72,9 +73,9 @@ export class ActualVisitaComponent implements OnInit {
  * @returns
  */
   open(): void {
-    this.dialogService.open(ShowcaseDialogComponent, {
+    this.dialogService.open(DialogCommentComponent, {
       context: {
-        title: 'Ingresar comentarios',
+        title: 'Ingresa tus comentarios',
       },
     });
   }
