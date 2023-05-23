@@ -1,39 +1,45 @@
 import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
+  // {
+  //   title: 'E-commerce',
+  //   icon: 'shopping-cart-outline',
+  //   link: '/pages/dashboard',
+  //   home: true,
+  // },
+  // {
+  //   title: 'IoT Dashboard',
+  //   icon: 'home-outline',
+  //   link: '/pages/iot-dashboard',
+  // },
+  // {
+  //   title: 'FEATURES',
+  //   group: true,
+  // },
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
-    link: '/pages/dashboard',
-    home: true,
-  },
-  {
-    title: 'IoT Dashboard',
+    title: 'Inmuebles',
     icon: 'home-outline',
-    link: '/pages/iot-dashboard',
-  },
-  {
-    title: 'FEATURES',
-    group: true,
-  },
-  {
-    title: 'User',
-    icon: 'layout.outline',
-    children: [
+    children:[
       {
-        title: 'Listar',
-        link: '/pages/user/list'
+        title:'Ingresar Inmueble',
+        icon: 'home-outline',
+        link:'/pages/inmuebles/create-inmuebles'
+
+      },
+      {
+        title: 'Mostrar Lista Inmuebles',
+        icon: 'home-outline',
+        link: '/pages/inmueble/list'
       }
     ]
   },
   {
-    title: 'visitas',
-    icon: 'layout-outline',
+    title: 'Propiedades',
+    icon: 'home-outline',
     children: [
       {
-        title: 'actualizar-visitas',
-        icon: 'message-circle-outline',
-        link: '/pages/visitas/actual-visita'
+        title: 'Listar',
+        link: '/pages/estate'
       }
     ]
   },
