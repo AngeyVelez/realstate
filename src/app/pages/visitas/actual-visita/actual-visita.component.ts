@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { log } from 'console';
+import { ShowcaseDialogComponent } from '../../modal-overlays/dialog/showcase-dialog/showcase-dialog.component';
+import { NbDialogService } from '@nebular/theme';
 
 
 @Component({
@@ -40,16 +42,41 @@ export class ActualVisitaComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(
+
+    private dialogService: NbDialogService
+
+  ) { }
 
   ngOnInit(): void {
 
     this.showInfo();
   }
 
-
+  /**
+   * @description función que muestra por consola los datos del arreglo
+   * @param
+   * @author Sebastian Rios
+   * @date 22/mayo/2023
+   * @returns
+   */
   showInfo(): void {
     console.log(this.listaInmuebles);
+  }
+
+  /**
+ * @description función que abre modal para agregar un comentario
+ * @param
+ * @author Sebastian Rios
+ * @date 22/mayo/2023
+ * @returns
+ */
+  open(): void {
+    this.dialogService.open(ShowcaseDialogComponent, {
+      context: {
+        title: 'Ingresar comentarios',
+      },
+    });
   }
 
 
